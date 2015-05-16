@@ -1,0 +1,41 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  color: teal;
+}
+#logo {
+  float: right;
+  width: 400px;
+}
+
+
+#menumessage {
+  position:absolute;
+  width:250px;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  padding: 30px;
+  background-color: #99CCFF;
+}
+
+#dernierstweets {
+  position:fixed;
+  top:10px;
+  left:400px;
+}
+
+textarea {
+  border: 2px blue dashed;
+  width: 250px;
+  height: 50px;
+  resize: none;
+}
+
