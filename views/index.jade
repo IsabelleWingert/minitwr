@@ -1,30 +1,13 @@
 extends layout 
 block content
-	img#logo(src="images/logo.png", alt="Logo du site")
-	
-	#menumessage.mm
-		h1= title
-		p Bienvenue sur #{title}
 
-		form(action='/', method='POST')
+	h1= title
+	p Bienvenue sur #{title}
+
+		form(action='/logged_in', method='POST')
 			p Votre pseudo :
 			input(name='pseudo', type='text',content='sends')
 			p mot de passe :
 			input(name='pwd', type='password',content='sends')
-			p Votre message :
-		
-		
-			textarea(name="tweet")
+			
 			input(type='submit', content='Sends', value='Envoyer')
-			keyPress(keyCharcode=10)
-
-
-	#dernierstweets.dt
-		p Messages :
-		ul 
-			- each tweet, index in tweets
-				if (index % 2 == 0)
-					li(class=date)= tweet
-				else 
-					ul
-						li(class=tw)=tweet
