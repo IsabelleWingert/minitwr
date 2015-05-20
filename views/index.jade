@@ -1,16 +1,15 @@
 extends layout 
 block content
 
-
 	h1= title
 	p Bienvenue sur #{title}
 
-		form(action='/login', method='POST')
+		form(action='/logged_in', method='POST')
 			p Votre pseudo :
 			input(name='pseudo', type='text',content='sends')
 			p mot de passe :
 			input(name='pwd', type='password',content='sends')
-			p
+			
 			input(type='submit', content='Sends', value='Envoyer')
 			
 		
