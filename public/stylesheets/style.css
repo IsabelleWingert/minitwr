@@ -1,6 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: center;
+  text-align:center; 
 }
 
 a {
@@ -28,8 +30,9 @@ h1 {
 
 #dernierstweets {
   position:fixed;
-  top:10px;
+  top: 50px;
   left:400px;
+  text-align:left; 
 }
 
 textarea {
@@ -38,4 +41,12 @@ textarea {
   height: 50px;
   resize: none;
 }
+li {
+  color: blue;
+}
 
+#deco {
+  position: absolute;
+  bottom: 100px;
+  left: 90px;
+}
