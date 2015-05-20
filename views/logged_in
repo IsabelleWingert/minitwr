@@ -1,0 +1,28 @@
+extends layout 
+block content
+	img#logo(src="images/logo.png", alt="Logo du site")
+	
+	#menumessage.mm
+		h1= title
+		p Bienvenue #{pseudo}
+
+		form(action='/publish', method='POST')
+			p Votre message :
+			
+			textarea(name="tweet")
+			input(type='submit', content='Sends', value='Envoyer')
+				
+		form(action='/disconnect', method='POST')
+			input(type='submit', content='Sends', value='Déconnexion', id='deco')
+
+
+	#dernierstweets.dt
+		h2 Messages :
+		ul 
+			- each tweet, index in tweets
+				if (index % 2 == 0)
+					li(class=date)= tweet
+				else 
+					ul
+						li(class=mess)=tweet
+						
