@@ -12,9 +12,9 @@ a {
 h1 {
   color: teal;
 }
-#logo {
-  float: right;
-  width: 400px;
+
+#enveloppe{
+  width: 150px;
 }
 
 
@@ -30,9 +30,16 @@ h1 {
 
 #dernierstweets {
   position:fixed;
-  top: 50px;
+  top: 25px;
   left:400px;
   text-align:left; 
+}
+
+h2 {
+  color: #99CCFF;
+  font-family: Arial;
+  font-size: 30px;
+  text-align: center;
 }
 
 textarea {
