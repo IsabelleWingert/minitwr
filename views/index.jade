@@ -2,6 +2,7 @@ extends layout
 block content
 
 	h1= title
+	img#oiseau(src="images/oiseau_accueil.png", alt="oiseau")
 	p Bienvenue sur #{title}
 
 		form(action='/logged_in', method='POST')
